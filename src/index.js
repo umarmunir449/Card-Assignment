@@ -1,13 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Header from'./Mycomponents/Header';
+import './App.css';
+import  {MediaPage} from './Mycomponents/MediaPage';
+import {MediaCard} from './Mycomponents/MediaCard'
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Header/>
+   <MediaPage/>
+    <MediaCard/>
+
   </React.StrictMode>
 );
 

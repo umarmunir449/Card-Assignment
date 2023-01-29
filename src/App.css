@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+
+nav{
+  background-color: rgb(73, 100, 91);
+  height: 100vh;
+  max-height: 80px;
+  text-align: left;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-style: groove;
+  outline: rgb(19, 100, 180);
+
+ 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form{
+  float: right;
+  margin-top: 10px;
+ 
+}
+input{
+  border-radius: 10px;
+  height: 30px;
+width: 200px;
+font-size: 10px;
+
+}
+button{
+  color: rgb(241, 236, 229);
+  border-radius: 6px;
+ margin-left: 10px ;
+ height: 40px;
+ font-size: 10px;
+ background: transparent;
+
+}
+button:hover{
+  background-color: rebeccapurple;
+}
+img{
+  height: 70px;
+  width: 150px;
+  float: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.menu{
+  height: 70px;
+  width:90px;
+  margin-left: 90px;
+  
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  float: left;
+
+}
+.menu ul{
+  float: right;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+ 
+}
+.menu ul li{
+  list-style: none;
+  margin-left: 22px;
+  margin-top: 25px;
+  font-size: 14px;
+
+  text-decoration: none;
   color: white;
-}
+  font-size: arial;
+  font-weight: bold;
+  transition: 0.4 ease-in-out;
 
-.App-link {
-  color: #61dafb;
 }
+.menu ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: arial;
+  font-weight: bold;
+  transition: 0.4 ease-in-out;
+ display: block;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+}
+.menu ul li a:hover{
+ 
+    color: #ff7200;
+   
+}
+.menu ul li ul  {
+  display: block;
+  position: absolute;  
+}
+.menu-1 ul li{
+height: fit-content;
+background-color: #0a0a0a;
+width: 90px;
+display: none;
+}
+.menu ul li:hover .menu-1 ul li{
+  display: block;
+}
+.MediaCard{
+
+  width: 900vh;
+  margin-bottom: 1%;
+  height: 160px;
+  background-color: #dbdeec;
+ 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.MediaCard h2{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  margin-left: 5px;
+}
+ .MediaCard p{
+  margin-left: 9px;
+  color: rgb(31, 4, 25);
+
+}
+.im{
+  margin-left: 10px;
 }
